@@ -9,45 +9,58 @@
     tools:context="edu.orangecoastcollege.cs273.ttran1272.northernlightsanimation.AnimationActivity">
 
 
-    <ImageView
-        android:id="@+id/lightsImageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1.00"
-        android:paddingLeft="10dp"
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingRight="15dp"
         android:paddingTop="15dp"
-        android:paddingRight="10dp"
-        app:srcCompat="@drawable/ic_northern_lights" />
-
-    <Button
-        android:id="@+id/framAnimButton"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:text="Button" />
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/lightsImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            app:srcCompat="@drawable/ic_northern_lights" />
 
-    <Button
-        android:id="@+id/rotateAnimButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:text="Button" />
+        <Button
+            android:id="@+id/framAnimButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:textSize="20sp"
+            android:text="@string/frame_anim_button_text"
+            android:layout_weight="0.93" />
 
-    <Button
-        android:id="@+id/shakeAnimButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:text="Button" />
+        <Button
+            android:id="@+id/rotateAnimButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/rotate_anim_button_text" />
 
-    <Button
-        android:id="@+id/customAnimButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:text="Button" />
+        <Button
+            android:id="@+id/shakeAnimButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/shake_anim_button_text" />
+
+        <Button
+            android:id="@+id/customAnimButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/custom_anim_button_text" />
+
+    </LinearLayout>
+
 </LinearLayout>
